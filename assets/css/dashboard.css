@@ -51,7 +51,6 @@ header .left_area h3 span:hover span {
 
 .logout_btn {
   padding: 5px;
-  background: #19B3D3;
   text-decoration: none;
   float: right;
   margin-top: -30px;
@@ -63,8 +62,17 @@ header .left_area h3 span:hover span {
   transition: 0.5s;
 }
 
-.logout_btn:hover {
-  background: #0B87A6;
+.user_email {
+  padding: 5px;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 180px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
 }
 
 .sidebar {
@@ -87,8 +95,12 @@ header .left_area h3 span:hover span {
   justify-content: center;
   align-items: center;
 }
+.sidebar .profile_info p {
+  font-size: 15px;
+}
 .sidebar .profile_info h4 {
   color: #222;
+  padding: 0px;
 }
 .sidebar .profile_info .profile_image {
   width: 100px;
@@ -161,13 +173,16 @@ label #sidebar_btn:hover {
   padding: 4%;
   margin-left: 250px;
   background-color: #fff;
-  height: 100vh;
+  height: 80vh;
   transition: 0.5s;
-  background-image: url("assets/images/wave-blog.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .content h1 {
   text-align: center;
+  font-weight: 900;
+  font-size: 40 px;
 }
 .content .form {
   padding: 0% 10%;
@@ -186,7 +201,7 @@ label #sidebar_btn:hover {
   padding: 8px 10px;
   border-radius: 8px;
   border: none;
-  border: 1px rgb(113, 113, 113) solid;
+  border: 1px #717171 solid;
 }
 
 #check:checked ~ .content {
@@ -203,6 +218,10 @@ label #sidebar_btn:hover {
 
 .mobile_nav {
   display: none;
+}
+
+.posts-section .card-body {
+  height: 100px !important;
 }
 
 /* Responsive CSS */
@@ -272,37 +291,70 @@ label #sidebar_btn:hover {
   .active {
     display: block;
   }
-  /*.mobile_nav_items{
-     background: #2F323A;
-     overflow: hidden;
-     max-height: 0;
-  transition: 0.5s;
-  transition-property: max-height;
-   }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: #ccc 1px solid;
+}
 
-   .mobile_nav_items a{
-     color: #fff;
-     display: block;
-     text-align: center;
-     letter-spacing: 1px;
-     line-height: 60px;
-     text-decoration: none;
-     box-sizing: border-box;
-     transition: 0.5s;
-     transition-property: background;
-   }
+.flex-item-left {
+  background-color: #f1f1f1;
+  border-radius: 8px 0px 0px 8px;
+  padding: 10px;
+  flex: 20%;
+}
+.flex-item-left img {
+  height: 180px;
+  border-radius: 8px;
+}
 
-   .mobile_nav_items a:hover{
-     background: #19B3D3;
-   }
+.flex-item-right {
+  padding: 3% 5%;
+  padding-left: 3%;
+  flex: 80%;
+  text-align: start;
+  border-radius: 0px 8px 8px 0px;
+}
+.flex-item-right P {
+  font-size: 17px;
+  color: #686868;
+}
+.flex-item-right span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #424242;
+}
 
-   .mobile_nav_items i{
-     padding-right: 10px;
-   }
+.blog-details {
+  padding-top: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.831372549);
+  bottom: 12px;
+  margin: 0 auto;
+}
+.blog-details .author {
+  color: #0D6EFD;
+  font-size: 17px;
+}
+.blog-details::before {
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.831372549);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
 
-   .active{
-     max-height: 1000px;
-   }*/
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 /* Primary Colors */
 /* Font Size */

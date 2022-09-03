@@ -125,7 +125,7 @@ button:hover {
 .landing-page {
   min-height: 100vh;
   background-color: #674baf;
-  background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
+  background: linear-gradient(to bottom, #0066FF 0%, #9999FF 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -186,7 +186,7 @@ button:hover {
 .login-page {
   height: 100vh;
   padding: 0% 5%;
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 .login-page .login-welcome-back {
   font-weight: 900;
@@ -208,7 +208,7 @@ button:hover {
 .signup-page {
   height: 100vh;
   padding: 1% 5%;
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 .signup-page .login-welcome-back {
   font-weight: 900;
@@ -270,12 +270,21 @@ button:hover {
   }
 }
 /* For medium screen */
+@media (max-width: 1000px) {
+  .signup-page .custom-up {
+    position: relative;
+    bottom: 0rem;
+  }
+}
 @media (max-width: 600px) {
   .signup-page {
     padding: 0;
   }
-  .signup-page .custom-signup-text {
-    font-size: 3rem;
+  .signup-page .custom-up {
+    margin-top: -50px;
+  }
+  .login-page {
+    padding: 0;
   }
 }
 /* </---------Media Queries---------> */

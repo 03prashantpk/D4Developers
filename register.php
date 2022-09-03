@@ -6,12 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js?v=2.0" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
-    <title>Register</title>
+    <script src="assets/js/main.js?v=2.0"></script>
+
+    <title>D4D - Register</title>
+
 
 </head>
 
@@ -42,44 +45,43 @@
                                     <hr>
                                 </center>
                                 <form>
-                                    <!-- 2 column grid layout with text inputs for the first and last names -->
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <input type="text" id="form3Example1" class="form-control" />
-                                                <label class="form-label" for="form3Example1">First name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <input type="text" id="form3Example2" class="form-control" />
-                                                <label class="form-label" for="form3Example2">Last name</label>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form3Example3" class="form-control" />
-                                        <label class="form-label" for="form3Example3">Email address</label>
+                                        <input type="email" id="email" class="form-control" />
+                                        <label class="form-label" for="email">Email address</label>
                                     </div>
 
                                     <!-- Password input -->
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" />
-                                        <label class="form-label" for="form3Example4">Password</label>
+                                    <div class="form-outline mb-4" id="Fieldpassword">
+                                        <input type="password" id="password" class="form-control" />
+                                        <label class="form-label" for="password">Password</label>
                                     </div>
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="form4Example4" class="form-control" />
-                                        <label class="form-label" for="form4Example4">Confirm Password</label>
+
+                                    <div class="form-outline mb-4" id="Fieldpassword">
+                                        <input type="password" id="cpassword" class="form-control" />
+                                        <label class="form-label" for="cpassword">Confirm Password</label>
+                                    </div>
+
+                                    <div class="form-outline mb-4" id="otpfield" hidden>
+                                        <input type="text" id="otpcode" class="form-control" />
+                                        <label class="form-label" for="otp">Enter your OTP</label>
                                     </div>
 
                                     <!-- backend response -->
-                                    <p id="signup-resoinse">Response here</p>
+                                    <p id="signup-resoinse"></p>
 
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-primary btn-block mb-4">
-                                        Sign up <i class="fas fa-long-arrow-alt-right"></i>
+                                    <button type="button" id="sendOtpbtn" class="btn btn-primary btn-block mb-4 shadow-2">
+                                        Send OTP <i class="fas fa-long-arrow-alt-right"></i>
+                                    </button>
+
+                                    <button hidden type="button" id="verifyOtp" class="btn btn-primary btn-block mb-4 shadow-2">
+                                        Verify OTP <i class="fas fa-long-arrow-alt-right"></i>
+                                    </button>
+
+                                    <button hidden type="button" id="create_an_account" class="btn btn-primary btn-block mb-4 shadow-2">
+                                        Register <i class="fas fa-long-arrow-alt-right"></i>
                                     </button>
 
 
