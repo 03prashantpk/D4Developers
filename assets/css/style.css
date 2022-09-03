@@ -82,13 +82,6 @@ button:hover {
           text-decoration: uppercase;
 }
 
-<<<<<<< HEAD
-=======
-.fas {
-  color: #0D6EFD;
-}
-
->>>>>>> dd44983785e73d6b084e0b9bf056068b6e264691
 /* Primary Colors */
 /* Font Size */
 /* Font Weight */
@@ -132,10 +125,6 @@ button:hover {
 .landing-page {
   min-height: 100vh;
   background-color: #674baf;
-<<<<<<< HEAD
-=======
-  background-image: url(https://bit.ly/3CA3FP6);
->>>>>>> dd44983785e73d6b084e0b9bf056068b6e264691
   background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -233,7 +222,6 @@ button:hover {
 }
 .signup-page form {
   padding: 8% 8%;
-<<<<<<< HEAD
 }
 .signup-page .custom-signup-text {
   font-size: 3.5rem;
@@ -243,20 +231,6 @@ button:hover {
   bottom: 6rem;
 }
 
-=======
-}
-
-/*
-.main_page_section_1 {
-    p {
-        &:hover {}
-        span {}
-    }
-    h1 {}
-}
-
-*/
->>>>>>> dd44983785e73d6b084e0b9bf056068b6e264691
 /* For medium screen */
 @media (min-width: 800px) and (max-width: 1200px) {
   .hero-text {
@@ -268,15 +242,9 @@ button:hover {
   .landing-page {
     min-height: 100vh;
     background-color: #674baf;
-<<<<<<< HEAD
     background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-=======
-    background-image: url(https://bit.ly/3PN5FGJ);
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
->>>>>>> dd44983785e73d6b084e0b9bf056068b6e264691
     background-position: top;
     overflow: auto;
     padding: 0 2em;
@@ -302,7 +270,6 @@ button:hover {
   }
 }
 /* For medium screen */
-<<<<<<< HEAD
 @media (max-width: 600px) {
   .signup-page {
     padding: 0;
@@ -311,8 +278,6 @@ button:hover {
     font-size: 3rem;
   }
 }
-=======
->>>>>>> dd44983785e73d6b084e0b9bf056068b6e264691
 /* </---------Media Queries---------> */
 /*
 
