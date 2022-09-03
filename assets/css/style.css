@@ -119,8 +119,7 @@ button:hover {
 }
 .d4developer_Name span {
   font-weight: 900;
-  color: orange;
-  
+  color: #FBB27C;
 }
 .d4developer_Name:hover {
   color: #fff;
@@ -129,9 +128,9 @@ button:hover {
 
 .landing-page {
   min-height: 100vh;
+  background-color: #674baf;
+  background-image: url(https://bit.ly/3CA3FP6);
   background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
-
-  /* background-image: url(https://bit.ly/3CA3FP6); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -193,9 +192,6 @@ button:hover {
   height: 100vh;
   padding: 0% 5%;
   background-color: #f5f5f5;
-}
-.LoginContent{
-  font-size: 3.75rem;
 }
 .login-page .login-welcome-back {
   font-weight: 900;
@@ -281,13 +277,6 @@ button:hover {
     justify-content: center;
   }
 }
-
-@media (min-width: 110px) and (max-width: 632px) {
-  .LoginContent{
-    font-size: 2.5rem;
-  }
-}
-
 /* For medium screen */
 /* </---------Media Queries---------> */
 /*

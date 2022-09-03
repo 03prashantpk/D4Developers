@@ -37,8 +37,9 @@
     min-height: 100vh;
     background-color: $Violet;
     background-image: url(https://bit.ly/3CA3FP6);
+  background: linear-gradient(to bottom, #0066ff 0%, #9999ff 100%);
     background-repeat: no-repeat;
-    background-size: 85% 100%;
+    background-size: 100% 100%;
     background-position: center;
     overflow: auto;
     padding: 2em 4em;
