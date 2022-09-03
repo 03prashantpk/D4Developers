@@ -329,6 +329,12 @@ label #sidebar_btn:hover {
   color: #424242;
 }
 
+.delete_btn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;
+}
+
 .blog-details {
   padding-top: 16px;
   font-size: 11px;

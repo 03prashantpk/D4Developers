@@ -14,6 +14,9 @@ $(document).ready(function() {
     $("#checkAvability").click(function() {
         searchBlogAvability();
     });
+    $("#POST").click(function() {
+        ckEditorContent();
+    });
 });
 
 
@@ -195,4 +198,11 @@ function searchBlogAvability() {
             }
         });
     }
+}
+
+function ckEditorContent() {
+    $("#blog_data").bind("keyup", function() {
+        $("#post_response").text($(this).val());
+    });
+
 }

@@ -319,6 +319,12 @@ label #sidebar_btn:hover {
     }
 }
 
+.delete_btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+
 .blog-details {
     padding-top: 16px;
     font-size: 11px;

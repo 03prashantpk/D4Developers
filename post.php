@@ -19,10 +19,31 @@
 
     <div class="content post-section">
         <h1 class="post">All Posts</h1>
+
+        <span style="display: flex; justify-content:flex-end">
+        <button class="shadow-2">Add new post <i class="fas fa-edit"></i></button>
+        </span>
+        
         
         <center><hr style="width: 10%;"></center>
         <br><br>
-        <div class="flex-container shadow-2">
+        <div class="flex-container shadow-7">
+            <div class="flex-item-left">
+                <img src="https://enally.in/live/DANL/images/blog-1.webp" alt="">
+            </div>
+            <div class="flex-item-right">
+                <span>Lorem ipsum, dolor sit amet </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam atque reiciendis mollitia non fuga consequatur reprehenderit, ipsum odit tempora! </p>
+                <div class="blog-details">
+                    by <span class="author"> Sergey Makashin | </span> Published: 22 Aug 2022  <span class="date"><span class="author"> | </span> <span style="color: #0D6EFD;">10K <i class="fas fa-thumbs-up" ></i></span> <span class="delete_btn" style=" display: flex; justify-content: flex-end; cursor: pointer; color: #bbb"><i class="fas fa-trash-alt"></i></span></span>
+                </div>              
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="flex-container shadow-7">
             <div class="flex-item-left">
                 <img src="https://enally.in/live/DANL/images/blog-1.webp" alt="">
             </div>
@@ -38,7 +59,7 @@
 
         <br><br>
 
-        <div class="flex-container shadow-2">
+        <div class="flex-container shadow-7">
             <div class="flex-item-left">
                 <img src="https://enally.in/live/DANL/images/blog-1.webp" alt="">
             </div>
@@ -54,23 +75,7 @@
 
         <br><br>
 
-        <div class="flex-container shadow-2">
-            <div class="flex-item-left">
-                <img src="https://enally.in/live/DANL/images/blog-1.webp" alt="">
-            </div>
-            <div class="flex-item-right">
-                <span>Lorem ipsum, dolor sit amet </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam atque reiciendis mollitia non fuga consequatur reprehenderit, ipsum odit tempora! </p>
-                <div class="blog-details">
-                    by <span class="author"> Sergey Makashin | </span> Published: 22 Aug 2022  <span class="date"><span class="author"> | </span> <span style="color: #0D6EFD;">10K <i class="fas fa-thumbs-up" ></i></span></span>
-                </div>              
-
-            </div>
-        </div>
-
-        <br><br>
-
-        <div class="flex-container shadow-2">
+        <div class="flex-container shadow-7">
             <div class="flex-item-left">
                 <img src="https://enally.in/live/DANL/images/blog-1.webp" alt="">
             </div>
