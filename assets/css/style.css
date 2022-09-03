@@ -176,7 +176,7 @@ button:hover {
 
 .login-page {
   height: 100vh;
-  padding: 1% 5%;
+  padding: 0% 5%;
   background-color: #f5f5f5;
 }
 .login-page .login-welcome-back {
@@ -190,7 +190,10 @@ button:hover {
   width: 30%;
 }
 .login-page form {
-  padding: 8% 8%;
+  padding: 4% 8%;
+}
+.login-page .login-image {
+  width: 15%;
 }
 
 .signup-page {
