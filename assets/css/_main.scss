@@ -135,16 +135,30 @@
     form {
         padding: 8% 8%;
     }
+    .custom-signup-text{
+        font-size: 3.5rem;
+    }
+    .custom-up{
+        position: relative;
+        bottom: 6rem;
+    }
 }
  
-
-/*
-.main_page_section_1 {
-    p {
-        &:hover {}
-        span {}
+@media (max-width: 990px) {
+    .signup-page{
+        .custom-up{
+            position: relative;
+            bottom: 0rem;
+        }
     }
-    h1 {}
 }
 
-*/
+@media (max-width: 600px) {
+    .signup-page{
+        padding: 0;
+
+        .custom-signup-text{
+            font-size: 3rem;
+        }
+    }
+}
