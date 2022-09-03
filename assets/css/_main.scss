@@ -94,13 +94,54 @@
     }
 }
 
-// .main_page_section_1{
-//     p{
-//         &:hover{
-//         }
-//         span{
-//         }
-//     }
-//     h1{
-//     }
-// }
+// login CSS
+.login-page {
+    height: 100vh;
+    padding: 1% 5%;
+    background-color: #f5f5f5;
+    .login-welcome-back {
+        font-weight: 900;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    hr {
+        width: 30%;
+    }
+    form {
+        padding: 8% 8%;
+    }
+}
+
+// Sign Up CSS
+.signup-page {
+    height: 100vh;
+    padding: 1% 5%;
+    background-color: #f5f5f5;
+    .login-welcome-back {
+        font-weight: 900;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    hr {
+        width: 30%;
+    }
+    form {
+        padding: 8% 8%;
+    }
+}
+
+
+/*
+.main_page_section_1 {
+    p {
+        &:hover {}
+        span {}
+    }
+    h1 {}
+}
+
+*/
