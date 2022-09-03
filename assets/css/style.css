@@ -231,25 +231,6 @@ button:hover {
   bottom: 6rem;
 }
 
-/*
-.main_page_section_1 {
-    p {
-        &:hover {}
-        span {}
-    }
-}
-
-@media (max-width: 600px) {
-    .signup-page{
-        padding: 0;
-
-        .custom-signup-text{
-            font-size: 3rem;
-        }
-    }
-}
-
-*/
 /* For medium screen */
 @media (min-width: 800px) and (max-width: 1200px) {
   .hero-text {
