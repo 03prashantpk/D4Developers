@@ -1,0 +1,384 @@
+/*
+* Designed and Developed by: (https://enally.in) and The TEAM.
+
+* NOTE 1: Do not make changes directly on style.css file otherwise we may charge extra for maintainance in future.
+* NOTE 2: Comment and Write all the changes on changes.md file. 
+* NOTE 3 Important: We will only assist 1 week for free but NOTE 1 and NOTE 2 should not be violated.
+
+* Code Instructions
+* 1. Main codes are on - _main.scss
+* 2. Responsive codes are on - _responsive.scss
+* 3. Color, Fonts and other variables are inside - _components.scss
+* 4. Globles Codes such as buttons, shadow, main-head, sub-heading and etc are inside - _globle.scss
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* Primary Colors */
+/* Font Size */
+/* Font Weight */
+/* </---------Variables---------> */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  background: #0D6EFD;
+  padding: 20px 30px;
+  width: 100%;
+  top: 0;
+  height: 30px;
+}
+header .left_area h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+header .left_area h3 span {
+  color: #222;
+}
+header .left_area h3 span:hover span {
+  color: #fff;
+  transition: 0.3s;
+  transition-delay: 1ms;
+  cursor: pointer;
+}
+
+.logout_btn {
+  padding: 5px;
+  background: #19B3D3;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.logout_btn:hover {
+  background: #0B87A6;
+}
+
+.sidebar {
+  z-index: 1;
+  top: 0;
+  background: #F5F5F5;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+}
+.sidebar .profile_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .profile_info h4 {
+  color: #222;
+}
+.sidebar .profile_info .profile_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #424242;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.active {
+  background: #0D6EFD;
+}
+.active span {
+  color: #fff;
+}
+.active .fas {
+  color: #fff;
+}
+
+.sidebar a:hover {
+  background: #3180f8;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 220px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover {
+  color: #19B3D3;
+}
+
+#check:checked ~ .sidebar {
+  left: -185px;
+}
+
+#check:checked ~ .sidebar a span {
+  display: none;
+}
+
+#check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.content {
+  margin-top: 60px;
+  padding: 4%;
+  margin-left: 250px;
+  background-color: #fff;
+  height: 100vh;
+  transition: 0.5s;
+  background-image: url("assets/images/wave-blog.png");
+  background-size: cover;
+}
+.content h1 {
+  text-align: center;
+}
+.content .form {
+  padding: 0% 10%;
+}
+.content .form form {
+  text-align: center;
+  padding: 3% 10%;
+}
+.content .form form .input-field {
+  padding: 10px;
+}
+.content .form form input {
+  font-size: 20px;
+  color: #949494;
+  width: 40%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  border: 1px rgb(113, 113, 113) solid;
+}
+
+#check:checked ~ .content {
+  margin-left: 60px;
+}
+
+#check:checked ~ .sidebar .profile_info {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.mobile_nav {
+  display: none;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 780px) {
+  .sidebar {
+    display: none;
+  }
+  #sidebar_btn {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+  #check:checked ~ .content {
+    margin-left: 0;
+  }
+  .mobile_nav {
+    display: block;
+    width: 100%;
+  }
+  .nav_bar {
+    background: #222;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .nav_bar .mobile_profile_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .nav_bar .nav_btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  .nav_bar .nav_btn:hover {
+    color: #19B3D3;
+  }
+  .mobile_nav_items {
+    background: #2F323A;
+    display: none;
+  }
+  .mobile_nav_items a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 60px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .mobile_nav_items a:hover {
+    background: #19B3D3;
+  }
+  .mobile_nav_items i {
+    padding-right: 10px;
+  }
+  .active {
+    display: block;
+  }
+  /*.mobile_nav_items{
+     background: #2F323A;
+     overflow: hidden;
+     max-height: 0;
+  transition: 0.5s;
+  transition-property: max-height;
+   }
+
+   .mobile_nav_items a{
+     color: #fff;
+     display: block;
+     text-align: center;
+     letter-spacing: 1px;
+     line-height: 60px;
+     text-decoration: none;
+     box-sizing: border-box;
+     transition: 0.5s;
+     transition-property: background;
+   }
+
+   .mobile_nav_items a:hover{
+     background: #19B3D3;
+   }
+
+   .mobile_nav_items i{
+     padding-right: 10px;
+   }
+
+   .active{
+     max-height: 1000px;
+   }*/
+}
+/* Primary Colors */
+/* Font Size */
+/* Font Weight */
+/* </---------Variables---------> */
+.shadow-1 {
+  box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -webkit-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+  -moz-box-shadow: 32px 20px 28px -12px rgba(0, 0, 0, 0.344);
+}
+
+.shadow-2 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.shadow-2:hover {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  transition-delay: 1ms;
+  transition: 0.4s;
+}
+
+.shadow-3 {
+  box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 11px 7px 11px -7px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-4 {
+  box-shadow: -19px 15px 43px 6px rgba(0, 0, 0, 0.279);
+}
+
+.shadow-5 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.shadow-6 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.shadow-7 {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+button {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 22px;
+  background-color: #0D6EFD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  transition-delay: 1ms;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  transition: 0.3s;
+  transition-delay: 1ms;
+}
+
+.text-deco-none {
+  text-decoration: none;
+}
+
+.uppercase {
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+.fas {
+  color: #0D6EFD;
+}
+
+/*
+
+Do not write your code here or on this page
+Instead Use the above mentioned above code instructions
+
+*//*# sourceMappingURL=dashboard.css.map */
