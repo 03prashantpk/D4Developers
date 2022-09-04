@@ -1,7 +1,12 @@
-<?php include "./functions/includeAll.php"; ?>
 
+<?php include "./functions/includeAll.php"; ?>
+<?php $pageCode = "dashboard";
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <!-- head -->
 
 <?php  include("partials/dashboard-head.php") ?>

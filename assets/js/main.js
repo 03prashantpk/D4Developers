@@ -194,7 +194,13 @@ function searchBlogAvability() {
             data: "blog_name=" + blogName + "&userId=" + userID,
 
             success: function(result) {
-                $("#search_response").html(result);
+                if (result == "success") {
+                    $("#search_response").css("color", "green");
+                }
+
+                $("#search_response").html(result).css("color", "red");
+
+
             }
         });
     }

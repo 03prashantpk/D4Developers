@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +33,7 @@
 
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime laborum natus voluptates tempora. Consectetur modi repudiandae eveniet! Nam amet accusantium quia esse odit quaerat voluptatem officia saepe incidunt nisi.</p>
 
-                    <button class="btn text shadow-1"><a href="register.html" class="text-deco-none">Create Blog</a></button>
+                    <button class="btn text shadow-1"><a href="register" class="text-deco-none">Create Blog</a></button>
                 </div>
             </div>
         </div>

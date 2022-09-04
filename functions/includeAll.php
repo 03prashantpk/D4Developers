@@ -31,3 +31,14 @@ while ($row = mysqli_fetch_assoc($personaldata)) {
     $email = $row['email'];
     $joined_on = $row['joined_on'];
 }
+
+$blogDetails = mysqli_query($conn, "SELECT * From blog WHERE user_id='$USERID'");
+
+while ($row = mysqli_fetch_assoc($blogDetails)) {
+    $blogID = $row["id"];
+    $blogName = $row["blog_name"];
+    $blogDateCreated = $row["created_on"];
+}
+
+$postData = mysqli_query($conn, "SELECT * From post WHERE user_id='$USERID'");
+

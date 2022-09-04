@@ -328,10 +328,7 @@ label #sidebar_btn:hover {
   font-weight: 600;
   color: #424242;
 }
-
-.delete_btn {
-  display: flex;
-  justify-content: flex-end;
+.flex-item-right .delete_btn {
   font-size: 22px;
 }
 
@@ -354,6 +351,21 @@ label #sidebar_btn:hover {
   opacity: 0.6;
   position: absolute;
   top: 0;
+}
+
+.editor_input {
+  width: 98%;
+  padding: 8px;
+  font-size: 20px;
+  border: #ccc 1px solid;
+}
+
+.editorBtn {
+  padding: 10px;
+  background-color: #0D6EFD;
+  border: none;
+  color: #fff;
+  font-size: 17px;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
